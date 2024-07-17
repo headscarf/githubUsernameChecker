@@ -4,8 +4,8 @@ import threading
 class Checker:
 
     def __init__(self) -> None:
-        self.username_file = "list.txt"
-        self.untaken_file = "untaken.txt"
+        self.username_file = "list.txt" # the usenrames list (input)
+        self.untaken_file = "untaken.txt" # the outputfile -> will show which usernames are avaliable / unclaimed. (output)
         self.link = "https://github.com/"
         self.lock = threading.Lock()
 
